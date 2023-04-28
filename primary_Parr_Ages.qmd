@@ -228,7 +228,7 @@ is lower, than the correct optimum.
 
 # Materials and methods
 
-## Data sources
+## Data sources and age composition estimates
 
 Uninterrupted time series of abundance estimates were available for
 spawner abundance from counting live and dead spawners, 199x--2022
@@ -241,12 +241,22 @@ Wells:Rock dam count ratios), to get estimate of Ok Sox adult returns.
 
 ### Migrating smolts
 
-Testing references, see @eq-simple, in this line, see
-`Fig~\ref{lifehistory}`{=latex} and see `Table~\ref{returns}`{=latex}.
+Smolts emigrating from Osoyoos Lake were captured in a Rotary Screw Trap (RST) 
+positioned between the North and South basin of Osoyoos Lake (i.e., Osoyoos 
+Narrows). An RST is a stationary fish sampling tool that is installed around the 
+river thalweg to randomly and passively capture small, riverine fishes. The 
+Osoyoos Narrows RST has been used to annually monitor smolting salmonids as they
+depart from Osoyoos Lake since [<span style = "color:red;">year</span>], where
+members of the Okanagan Nation Alliance (ONA) have been collecting annual smolt 
+biometric data as well as monitoring smolt timing and, more recently, deploying 
+PIT-tagged smolts to track downstream migration and survival rates. 
 
-Nulla mi mi, `Fig~\ref{fig1}`{=latex} venenatis sed ipsum varius,
-volutpat euismod diam. Proin rutrum vel massa non gravida. Praesent
-faucibus semper libero.
+As the smolt monitoring data at the Osoyoos Narrows RST typically lack otolith 
+or scale based age data, we used size, length and size-at-length data to 
+estimate the annual relative fractions of age 1.0 and age 2.0 smolts leaving 
+Osoyoos Lake. 
+
+*[methods for fitting double gaussian model here - dealing w/ truncated lengths, incorporating condition factors?]*
 
 ```{=tex}
 % Place figure captions after the first paragraph in which they are cited.
