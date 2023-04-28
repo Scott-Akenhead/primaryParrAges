@@ -40,42 +40,6 @@ abstract: |
 bibliography: bibliography.bib 
 ---
 
-# Quarto PLoS One template
-
-This template shows how to use PLOS template from
-<https://plos.org/resources/writing-center/>. Each journal have a
-submission guideline page, please refer to it.
-
--   [PLOS
-    Biology](https://journals.plos.org/plosbiology/s/submission-guidelines)
--   [PLOS
-    ONE](https://journals.plos.org/plosone/s/submission-guidelines)
--   This template file contains some guidelines and recommendations
-    initially given in `plos_latex_template.tex` that can be found in
-    <https://github.com/quarto-journals/plos/blob/main/style-guide/plos_latex_template.tex>
-
-There are no restrictions on package use within the LaTeX files except
-that no packages listed in the template may be deleted.
-
-No colors or graphics in the text. Color for background shading to table
-cells only.
-
-Please contact [latex\@plos.org](mailto:latex@plos.org){.email} with any
-questions submission guidelines. For anything Quarto related, please
-open an issue in <https://github.com/quarto-journals/plos>. If this is
-related to the LaTeX template, contact PLoS directly.
-
-### Figures and Tables
-
--   include tables (entirely) and figure captions (not image) directly
-    after the paragraph where they are first cited in the text.
--   please use "Fig" instead of "Figure". This has been made the default
-    in this Quarto format.
--   See PLOS figure guidelines at
-    <https://journals.plos.org/plosone/s/figures> and in your specific
-    journal guideline.
--   Do not use `\cal` for caligraphic font. Instead, use `\mathcal{}`
-
 ### Figure syntax / example
 
 Nulla mi mi, `Fig~\ref{fig1}`{=latex} venenatis sed ipsum varius,
@@ -140,47 +104,49 @@ They need to be referenced in text using `nameref` by using this syntax
 Within Quarto, `natbib` will be used with `plos2015.bst`, which expect
 numeric style citation. Use brackets for references, e.g `[@ref]`.
 
-### Math example
-
-Nam sit amet enim ultrices, ultrices elit pulvinar, volutpat risus.
-
-$$
-\begin{aligned}
-\mathrm{P_Y} = \underbrace{H(Y_n) - H(Y_n|\mathbf{V}^{Y}_{n})}_{S_Y} + \underbrace{H(Y_n|\mathbf{V}^{Y}_{n})- H(Y_n|\mathbf{V}^{X,Y}_{n})}_{T_{X\rightarrow Y}}
-\end{aligned}
-$$
-
 # Introduction
 
-\[need to define jargon: parr vs presmolt, brood year, smolt year,
-adults vs spawners,\]\
-
-After two centuries of building agricultural and hydroelectric dams in
-the in the Columbia River watershed, two wild populations of Sockeye
-Salmon (*Oncorynchus nerka*) persist: those rearing in Lake Wenatchee
-and in Osoyoos Lake (refs, Fig.1 ). Both result from successful
-transplants of hatchery fish (refs). Extensive background information on
-the history and ecology of these populations is available (refs). This
-paper focuses on Osoyoos Sockeye, but is immediately applicable to the
-similar Lake Wenatchee Sockeye.
+Osoyoos Lake Sockeye Salmon (OLSS) represent one of only two
+self-sustaining Sockeye conservation units in the Columbia River
+Watershed. Over a century of habitat degradation and the erection of
+hydroelectric and agricultural dams has extirpated wild Sockeye from
+much of their historic range. However, after population declines in the
+1990's, efforts from the Okanagan Nation Alliance (ONA) have spurred
+various habitat restoration projects, a supplementation hatchery, and
+two translocation projects in the Okanagan basin. Consequently, Okanagan
+Sockeye Salmon abundances have increased dramatically over the last two
+decades and therefore considerable efforts are being invested into
+population monitoring and research assessing the lake's capacity for
+spawning and rearing [@akenheadscotta.; @wilkinson2016].
 
 Fig.1 map locating WE and OSO in Columbia Watershed in North America.
 
-The life histories of sockeye populations are well described (refs), and
-the life stages of Osoyoos sockeye involves a series of habitats:
+Sockeye parr abundances are a prime focus of ongoing population
+monitoring. Monitoring activities are restricted to the North Basin of
+Osoyoos Lake (Fig. #) as historic surveys in the South Basin observed
+low abundances and South Basin water temperatures are generally
+considered inhospitable for rearing \[refs\]. However, the contemporary
+assumption of low parr abundance in the South Basin is an eplicit source
+of uncertainty in this study, although water temperature data suggest
+that this source of error is likely small. Parr, however, must pass
+through the South Basin on their outward spring migration.
+
+The life histories of OLSS are well described (refs) and involve a
+number of discrete habitats:
 
 1.  October: spawners bury eggs in gravel beds in the Okanagan River
-    upstream of Osoyoos Lake,
-2.  November--April: eggs and alevins develop in that river gravel,
+    upstream of Osoyoos Lake.
+2.  November--April: eggs and alevins develop in that river gravel.
 3.  April--May: emergent fry immigrate to the margins (littoral zone) of
-    the lake,
-4.  May--September: as parr, they spread throughout the lake,
+    the lake.
+4.  May--September: as parr, they spread throughout the lake.
 5.  September--March: parr change into presmolts; not all parr change
     into presmolts and emigrate after one year in the lake, but
     previously the fraction spending a second year in the lake was
     thought to be small.
-6.  April--May: presmolts emigrate from the lake as smolts \*en route\*
-    to the Pacific Ocean.
+6.  April--May: presmolts emigrate from the lake as smolts and traverse
+    eight hydroelectric dams and over 600km of the Columbia River before
+    entering the Pacific Ocean.
 7.  Adult salmon return to marine and freshwater fisheries and to the
     spawning ground after one, mainly two, or three years at sea (rarely
     longer).
@@ -195,19 +161,6 @@ schedule: varying fractions of marine juveniles return after 2, 3, or 4
 summers in the ocean; similarly, parr emigrate after 1 or 2 summers in
 the
 lake.](figures/life%20cycle%20OSO%20SOX%20stages%20days%20factors%202023-04-23.png){#fig:lifehistory}
-
-Following a severe decline in the period 1994-2004, both populations
-have increased in abundance recently [@akenheadscotta.; @wilkinson2016].
-The abundance of spawners in the Osoyoos population led to concerns
-about habitat limitations: spawning grounds area and quality, and lake
-capacity for survival and growth of parr.
-
-Sockeye parr are largely confined to the North Basin of Osoyoos Lake.
-Low abundances of parr in the South Basin were observed in surveys in
-early spring in 1973 (ref) and 199x (ref). Recent and contiguous surveys
-were confined to the North Basin. The assumption of low parr abundance
-in the South Basin is an explicit source of uncertainty in this
-analysis.
 
 ## Why parr ages are important
 
@@ -241,22 +194,24 @@ Wells:Rock dam count ratios), to get estimate of Ok Sox adult returns.
 
 ### Migrating smolts
 
-Smolts emigrating from Osoyoos Lake were captured in a Rotary Screw Trap (RST) 
-positioned between the North and South basin of Osoyoos Lake (i.e., Osoyoos 
-Narrows). An RST is a stationary fish sampling tool that is installed around the 
-river thalweg to randomly and passively capture small, riverine fishes. The 
-Osoyoos Narrows RST has been used to annually monitor smolting salmonids as they
-depart from Osoyoos Lake since [<span style = "color:red;">year</span>], where
-members of the Okanagan Nation Alliance (ONA) have been collecting annual smolt 
-biometric data as well as monitoring smolt timing and, more recently, deploying 
-PIT-tagged smolts to track downstream migration and survival rates. 
+Smolts emigrating from Osoyoos Lake were captured in a Rotary Screw Trap
+(RST) positioned between the North and South basin of Osoyoos Lake
+(i.e., Osoyoos Narrows). An RST is a stationary fish sampling tool that
+is installed around the river thalweg to randomly and passively capture
+small, riverine fishes. The Osoyoos Narrows RST has been used to
+annually monitor smolting salmonids as they depart from Osoyoos Lake
+since \[[year]{style="color:red;"}\], where members of the Okanagan
+Nation Alliance (ONA) have been collecting annual smolt biometric data
+as well as monitoring smolt timing and, more recently, deploying
+PIT-tagged smolts to track downstream migration and survival rates.
 
-As the smolt monitoring data at the Osoyoos Narrows RST typically lack otolith 
-or scale based age data, we used size, length and size-at-length data to 
-estimate the annual relative fractions of age 1.0 and age 2.0 smolts leaving 
-Osoyoos Lake. 
+As the smolt monitoring data at the Osoyoos Narrows RST typically lack
+otolith or scale based age data, we used size, length and size-at-length
+data to estimate the annual relative fractions of age 1.0 and age 2.0
+smolts leaving Osoyoos Lake.
 
-*[methods for fitting double gaussian model here - dealing w/ truncated lengths, incorporating condition factors?]*
+*\[methods for fitting double gaussian model here - dealing w/ truncated
+lengths, incorporating condition factors?\]*
 
 ```{=tex}
 % Place figure captions after the first paragraph in which they are cited.
