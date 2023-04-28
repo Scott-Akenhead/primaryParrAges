@@ -23,7 +23,7 @@ author:
           state: British Columbia, Canada
           postal-code: V9T 6N7
     corresponding: true
-  - name: Braden Judsen
+  - name: Braden Judson
     email: braden.judsen@dfo-mpo.gc.ca
     affiliations:
         - id: https://orcid.org/0000-0002-4432-9372
